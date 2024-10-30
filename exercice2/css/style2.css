@@ -1,0 +1,61 @@
+body {
+    display: flex;
+}
+
+.puzzle {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(4, 150px);
+    grid-template-areas:
+        "p01 . p02 p03"
+        "p04 p05 . ."
+        "p06 p07 p08 ."
+        ". p09 . p10";
+    gap: 0;
+}
+
+.puzzle div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#piece01 {
+    grid-area: p01;
+}
+
+#piece02 {
+    grid-area: p02;
+}
+
+#piece03 {
+    grid-area: p03;
+}
+
+#piece04 {
+    grid-area: p04;
+}
+
+#piece05 {
+    grid-area: p05;
+}
+
+#piece06 {
+    grid-area: p06;
+}
+
+#piece07 {
+    grid-area: p07;
+}
+
+#piece08 {
+    grid-area: p08;
+}
+
+#piece09 {
+    grid-area: p09;
+}
+
+#piece10 {
+    grid-area: p10;
+}
